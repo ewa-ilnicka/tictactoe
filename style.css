@@ -30,6 +30,7 @@ body {
     background-color: lightgray;
     border-radius: 5px;
     border: 2px solid gray;
+    cursor: pointer;
 }
 
 .reset-button {
@@ -37,4 +38,11 @@ body {
     padding: 10px 20px;
     border-radius: 5px;
     border: 2px solid gray;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reset-button:hover,
+.board__item:hover {
+    background-color: lightslategrey;
 }
