@@ -31,18 +31,28 @@ body {
     border-radius: 5px;
     border: 2px solid gray;
     cursor: pointer;
+    position: relative;
 }
 
-.board__item--filled-X::before {
+.board__item--filled-X::before,
+.board__item--filled-X::after {
     position: absolute;
     content: "";
     height: 5px;
     width: 100%;
     top: 50%;
     left: 0;
-    transform: translate(-50%) rotate(-45deg);
     background-color: maroon;
 }
+
+.board__item--filled-X::before {
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.board__item--filled-X::after {
+    transform: translateY(-50%) rotate(45deg);
+}
+
 
 .reset-button {
     margin-top: 20px;
@@ -51,6 +61,19 @@ body {
     border: 2px solid gray;
     cursor: pointer;
     transition: 0.3s;
+}
+
+.board__item--filled-O::before {
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    border: 5px solid blue;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80%;
+    width: 80%;
+
 }
 
 .reset-button:hover,
