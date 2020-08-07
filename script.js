@@ -12,7 +12,12 @@ const resetGame = () => {
     gameActive = true;
 }
 
+const clearMessage = () => {
+    panel.innerText = "";
+}
+
 resetGame();
+clearMessage();
 
 const winningConditions = [
     [0, 1, 2],
@@ -61,7 +66,8 @@ const handleButtonClick = () => {
     resetGame();
     fieldsElement.forEach(field => {
         field.classList.remove("board__item--filled-X", "board__item--filled-O");
-    })
+    });
+    clearMessage();
 }
 
 button.addEventListener("click", handleButtonClick);
