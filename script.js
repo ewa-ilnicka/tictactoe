@@ -1,14 +1,18 @@
 const fieldsElement = document.querySelectorAll(".board__item");
 const panel = document.querySelector(".panel");
+const button = document.querySelector(".reset-button");
 
-const fields = ["", "", "", "", "", "", "", "", ""];
+let fields;
+let activePlayer;
+let gameActive;
 
-let activePlayer = "X";
-let gameActive = true;
-
-const displayWinMessage = () => {
-    panel.innerText = `Wygrałeś ${activePlayer}`;
+const resetGame = () => {
+    fields = ["", "", "", "", "", "", "", "", ""];
+    activePlayer = "X";
+    gameActive = true;
 }
+
+resetGame();
 
 const winningConditions = [
     [0, 1, 2],
@@ -20,6 +24,9 @@ const winningConditions = [
     [0, 4, 8],
     [2, 4, 6]
 ]
+const displayWinMessage = () => {
+    panel.innerText = `Wygrałeś ${activePlayer}`;
+}
 
 const validateGame = () => {
     for (let i = 0; i <= 7; i++) {
@@ -49,3 +56,12 @@ fieldsElement.forEach(field => {
         }
     });
 });
+
+const handleButtonClick = () => {
+    resetGame();
+    fieldsElement.forEach(field => {
+        field.classList.remove("board__item--filled-X", "board__item--filled-O");
+    })
+}
+
+button.addEventListener("click", handleButtonClick);
