@@ -33,6 +33,17 @@ body {
     cursor: pointer;
 }
 
+.board__item--filled-X::before {
+    position: absolute;
+    content: "";
+    height: 5px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%) rotate(-45deg);
+    background-color: maroon;
+}
+
 .reset-button {
     margin-top: 20px;
     padding: 10px 20px;
