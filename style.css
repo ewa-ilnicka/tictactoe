@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 .wrapper {
@@ -61,6 +61,7 @@ body {
     border: 2px solid gray;
     cursor: pointer;
     transition: 0.3s;
+    font-size: 24px;
 }
 
 .board__item--filled-O::before {

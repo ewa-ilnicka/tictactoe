@@ -30,11 +30,11 @@ const winningConditions = [
     [2, 4, 6]
 ]
 const displayWinMessage = () => {
-    panel.innerText = `Wygrałeś ${activePlayer}`;
+    panel.innerText = `Congratulation  ${activePlayer}, you won!`;
 }
 
 const displayTieMessage = () => {
-    panel.innerText = `Remis`;
+    panel.innerText = `Draw, try again.`;
 }
 
 const validateGame = () => {
