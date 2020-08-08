@@ -80,9 +80,8 @@ Game can be played by two players. One player is represented by red X-symbol and
 
 Below the board is a button which resets the board and starts a new game.
 
-<img src="resources/X.png" alt="X won" width="200" height="200">
-<img src="resources/O.png" alt="Y won" width="200" height="200">
-<img src="resources/draw.png" alt="Draw" width="200" height="200">
+| <img src="resources/X.png" alt="X won" width="200" height="200"> | <img src="resources/O.png" alt="Y won" width="200" height="200"> | <img src="resources/draw.png" alt="Draw" width="200" height="200"> |
+
 
 ## Roadmap
 
