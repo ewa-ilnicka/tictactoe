@@ -74,7 +74,7 @@ or download ZIP.
 
 
 ## Usage
-<img src="resources/sample.gif" alt="Sample">
+[![Sample](resources/sample.gif)]()
 
 Game can be played by two players. One player is represented by red X-symbol and other by blue O-symbol. Each player can win and nobody can win if it's a draw situation.
 
