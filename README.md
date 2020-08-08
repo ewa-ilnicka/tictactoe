@@ -3,7 +3,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/ewa-ilnicka/tictactoe">
-    <img src="resources/view.png" alt="View" width="80" height="80">
+    <img src="resources/view2.png" alt="View" width="80" height="80">
   </a>
 
   <h3 align="center">Tic Tac Toe Game</h3>
