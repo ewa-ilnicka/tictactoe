@@ -33,7 +33,12 @@ const displayWinMessage = () => {
     panel.innerText = `Wygrałeś ${activePlayer}`;
 }
 
+const displayTieMessage = () => {
+    panel.innerText = `Remis`;
+}
+
 const validateGame = () => {
+    let gameWon = false;
     for (let i = 0; i <= 7; i++) {
         const [posA, posB, posC] = winningConditions[i];
         const value1 = fields[posA];
@@ -41,10 +46,22 @@ const validateGame = () => {
         const value3 = fields[posC];
 
         if (value1 !== "" && value1 === value2 && value1 === value3) {
-            gameActive = false;
-            displayWinMessage();
+            gameWon = true;
+            break;
         }
     }
+
+    if (gameWon) {
+        gameActive = false;
+        displayWinMessage();
+    } else if (isBoardFull()) {
+        gameActive = false;
+        displayTieMessage();
+    }
+};
+
+let isBoardFull = () => {
+    return fields.find(field => field === "") === undefined;
 };
 
 fieldsElement.forEach(field => {
