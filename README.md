@@ -70,19 +70,28 @@ or download ZIP.
 
 2. Open index.html with any browser.
 
-3. ave fun playing the game with you friend :)
+3. Have fun playing the game with you friend :)
 
 
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+<img src="resources/sample.gif" alt="Sample" width="200" height="200">
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+Game can be played by two players. One player is represented by red X-symbol and other by blue O-symbol. Each player can win and nobody can win if it's a draw situation.
 
+Below the board is a button which resets the board and starts a new game.
 
+<img src="resources/X.png" alt="X won" width="200" height="200">
+<img src="resources/O.png" alt="Y won" width="200" height="200">
+<img src="resources/draw.png" alt="Draw" width="200" height="200">
 
-<!-- ROADMAP -->
 ## Roadmap
+
+What I am planning to do:
+
+1. Game mode for player vs AI.
+2. Few different designs including blackboard theme and some cyberpunk theme.
+3. Points counting and score.
 
 
 
