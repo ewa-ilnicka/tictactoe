@@ -35,7 +35,7 @@
 
   <img src="resources/view.png" alt="View">
 
-There are many great tic tac toe games available on GitHub, however, I decided to write one on my own to improve my programming skills.
+There are many great tic tac toe games available on GitHub, however, I decided to write one on my own to improve my programming skills. I wrote it while watching tutorial on YT made by [Samuraj Programowania](https://www.youtube.com/channel/UC6wlzVp-5TD5xfDwiohSDeg).
 
 In this project:
 * structure was made in HTML, styling in CSS and the script in Java Script;
@@ -52,19 +52,13 @@ To built this project I used:
 * [Java Script](https://en.wikipedia.org/wiki/JavaScript)
 
 
+## Getting Started
 
-<!-- ## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-```sh
-npm install npm@latest -g
-```
+To open index.html you need any browser (altough I don't recommend Internet Explorer).
 
 ### Installation
 
@@ -83,8 +77,6 @@ const API_KEY = 'ENTER YOUR API';
 ```
 
 
-
-<!-- USAGE EXAMPLES -->
 ## Usage
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
@@ -109,7 +101,7 @@ Contributions are what make the open source community such an amazing place to b
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request -->
+5. Open a Pull Request
 
 
 ## Contact
